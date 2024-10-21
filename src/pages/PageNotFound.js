@@ -5,7 +5,7 @@ import { Button } from '../components'
 import { useTitle } from '../hooks/useTitle'
 
 export const PageNotFound = () => {
-    const pageTitle = useTitle("Page Not found")
+    useTitle("Page Not found")
   return (
     <main>
         <section className='flex flex-col justify-center px-2'>
