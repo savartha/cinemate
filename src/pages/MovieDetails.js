@@ -18,7 +18,7 @@ export const MovieDetails = () => {
     },[url,params.id])
     const imageUrl =movie.poster_path ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}` : Backup
   //eslint-diable-next-line
-    const pageTitle = useTitle(`Movie details for ${movie.title}`)
+    useTitle(`Movie details for ${movie.title}`)
   return (
     <main>
       <section className="flex justify-around flex-wrap py-5">

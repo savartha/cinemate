@@ -4,7 +4,7 @@ import { useTitle } from '../hooks/useTitle'
 
 export const MoviesList = ({apiPath,title}) => {
     const {data: movies} = useFetch(apiPath)
-    const pageTitle = useTitle(title)
+    useTitle(title)
 
   return (
     <main>
