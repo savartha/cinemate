@@ -11,8 +11,8 @@ export const MovieDetails = () => {
     useEffect(()=>{
         async function fetchMovieDetails(){
             const response = await fetch(url);
-            const data = await response.json();
-            setMovie(data);
+            const json = await response.json();
+            setMovie(json);
         }
         fetchMovieDetails();
     },[url,params.id])
